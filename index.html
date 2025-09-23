@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen - 前端开发工程师</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 3D粒子背景 -->
+    <div id="particles-js"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AC</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">关于我</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">技能</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">项目</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">联系</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="hello">你好，我是</span>
+                    <span class="name">Alex Chen</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    热爱创造令人惊叹的数字体验，专注于前端开发与用户界面设计
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>查看作品</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>联系我</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="avatar">
+                            <img src="https://via.placeholder.com/200x200/6366f1/ffffff?text=AC" alt="Alex Chen">
+                            <div class="avatar-border"></div>
+                        </div>
+                        <div class="status-indicator">
+                            <span class="status-dot"></span>
+                            <span class="status-text">可接项目</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">向下滚动</span>
+        </div>
+    </section>
+
+    <!-- 关于我区域 -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">关于我</h2>
+                <p class="section-subtitle">了解更多关于我的故事</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-info">
+                        <h3>创造者 & 问题解决者</h3>
+                        <p>
+                            我是一名充满激情的前端开发工程师，拥有5年以上的开发经验。
+                            专注于创建美观、高性能和用户友好的Web应用程序。
+                        </p>
+                        <p>
+                            我热爱学习新技术，享受将创意想法转化为现实的过程。
+                            无论是复杂的交互动画还是响应式布局，我都能提供最佳解决方案。
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">完成项目</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">获得奖项</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">满意客户</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="code-editor">
+                        <div class="editor-header">
+                            <div class="editor-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="file-name">aboutMe.js</div>
+                        </div>
+                        <div class="editor-content">
+                            <pre class="code-block">
+<span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"Alex Chen"</span>,
+  <span class="property">location</span>: <span class="string">"上海, 中国"</span>,
+  <span class="property">experience</span>: <span class="string">"5+ years"</span>,
+  <span class="property">specialties</span>: [
+    <span class="string">"React.js"</span>,
+    <span class="string">"Vue.js"</span>,
+    <span class="string">"Node.js"</span>,
+    <span class="string">"TypeScript"</span>
+  ],
+  <span class="property">passion</span>: <span class="string">"创造美好用户体验"</span>
+};
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能区域 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">技能专长</h2>
+                <p class="section-subtitle">我掌握的技术栈</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">前端开发</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-skill="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">React.js</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-skill="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-vuejs"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Vue.js</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-skill="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">后端开发</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-skill="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-skill="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">设计工具</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Figma</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-skill="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">UI/UX Design</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-skill="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示区域 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">精选项目</h2>
+                <p class="section-subtitle">展示我的最佳作品</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/6366f1/ffffff?text=Project+1" alt="项目1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">智能电商平台</h3>
+                        <p class="project-description">
+                            基于React和Node.js开发的现代化电商平台，包含AI推荐系统、实时聊天和多种支付方式。
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/ec4899/ffffff?text=Project+2" alt="项目2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">任务管理系统</h3>
+                        <p class="project-description">
+                            团队协作工具，支持项目管理、时间追踪、文件共享等功能，提供直观的看板界面。
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300/10b981/ffffff?text=Project+3" alt="项目3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">数据可视化仪表板</h3>
+                        <p class="project-description">
+                            实时数据分析平台，提供交互式图表、自定义报表和数据导出功能。
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系区域 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">联系我</h2>
+                <p class="section-subtitle">让我们一起创造些令人惊叹的东西</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>地址</h4>
+                            <p>上海市浦东新区</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>邮箱</h4>
+                            <p>alex.chen@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>电话</h4>
+                            <p>+86 138 0000 0000</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="您的姓名" required>
+                        <label for="name">姓名</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="您的邮箱" required>
+                        <label for="email">邮箱</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="主题" required>
+                        <label for="subject">主题</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="您的消息" rows="5" required></textarea>
+                        <label for="message">消息</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>发送消息</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Alex Chen. 用 ❤️ 和 ☕ 制作</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
