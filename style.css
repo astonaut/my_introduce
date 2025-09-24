@@ -31,11 +31,14 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
     background: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    font-feature-settings: 'liga' 1, 'kern' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -177,6 +180,7 @@ body {
     display: block;
     font-size: 60px;
     font-weight: 800;
+    font-family: 'Playfair Display', serif;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -184,6 +188,7 @@ body {
     margin-bottom: 20px;
     opacity: 0;
     animation: fadeInUp 1s ease-out 0.4s forwards;
+    letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
@@ -226,12 +231,14 @@ body {
     border: none;
     border-radius: var(--border-radius);
     text-decoration: none;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    letter-spacing: -0.01em;
 }
 
 .btn-primary {
@@ -404,11 +411,13 @@ section {
 .section-title {
     font-size: 48px;
     font-weight: 800;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    letter-spacing: -0.02em;
 }
 
 .section-subtitle {
@@ -433,8 +442,10 @@ section {
 .about-info h3 {
     font-size: 32px;
     font-weight: 700;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
     color: var(--text-primary);
+    letter-spacing: -0.02em;
 }
 
 .about-info p {
@@ -486,6 +497,7 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow-secondary);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'JetBrains Mono', 'Monaco', 'Menlo', monospace;
 }
 
 .editor-header {
@@ -526,9 +538,10 @@ section {
 
 .editor-content {
     padding: 20px;
-    font-family: 'Monaco', 'Menlo', monospace;
+    font-family: 'JetBrains Mono', 'Monaco', 'Menlo', monospace;
     font-size: 14px;
     line-height: 1.6;
+    font-weight: 400;
 }
 
 .code-block {
@@ -575,8 +588,10 @@ section {
 .category-title {
     font-size: 24px;
     font-weight: 700;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 30px;
     color: var(--primary-color);
+    letter-spacing: -0.01em;
 }
 
 .skill-item {
@@ -715,8 +730,10 @@ section {
 .project-title {
     font-size: 24px;
     font-weight: 700;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 15px;
     color: var(--text-primary);
+    letter-spacing: -0.01em;
 }
 
 .project-description {
